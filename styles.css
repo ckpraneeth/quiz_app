@@ -1,0 +1,279 @@
+/* Overall dark cyberpunk background */
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #20002c 0%, #3a1c71 50%, #000000 100%);
+    color: #fff;
+    overflow: hidden;
+    animation: glowBg 3s infinite alternate ease-in-out;
+}
+
+/* Subtle background glow animation */
+@keyframes glowBg {
+    0% { filter: brightness(1); }
+    100% { filter: brightness(1.2); }
+}
+
+/* Quiz container styling */
+.quiz-container {
+    background: rgba(25, 25, 25, 0.9);
+    margin: auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.5);
+    text-align: center;
+    width: 320px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover effect for floating cyber feel */
+.quiz-container:hover {
+    transform: scale(1.03);
+}
+
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-shadow: 0 0 1px cyan, 0 0 5px cyan;
+}
+
+/* Question number */
+#question-number {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ff00ff;
+    margin-bottom: 5px;
+    text-shadow: 0 0 8px magenta;
+}
+
+/* Buttons with neon effects */
+.btn {
+    background-color: #00ffff;
+    color: black;
+    border: 2px solid cyan;
+    padding: 12px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 7px cyan;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Neon glow hover effect */
+.btn:hover {
+    background-color: #ff00ff;
+    color: #fff;
+    border-color: magenta;
+    box-shadow: 0px 0px 10px magenta, 0px 0px 30px magenta;
+    transform: translateY(-2px);
+}
+
+/* Button press effect */
+.btn:active {
+    transform: translateY(0);
+}
+
+/* Exit button specific styling */
+.exit-btn {
+    background-color: #8000ff; 
+    color: white;
+    box-shadow: 0px 0px 10px #ff007f;
+}
+.exit-btn:hover {
+    background-color: #6a00cc;
+    box-shadow: 0px 0px 15px #ff007f;
+}
+
+
+/* Correct answer animation */
+.correct {
+    background-color: #00ff00 !important;
+    box-shadow: 0px 0px 15px #00ff00;
+    animation: correctAnim 0.5s ease-in-out;
+}
+
+/* Incorrect answer animation */
+.incorrect {
+    background-color: #ff0000 !important;
+    box-shadow: 0px 0px 15px #ff0000;
+    animation: incorrectAnim 0.5s ease-in-out;
+}
+
+/* Animation for correct answer */
+@keyframes correctAnim {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/* Animation for incorrect answer */
+@keyframes incorrectAnim {
+    0% { transform: scale(1); }
+    50% { transform: scale(0.9); }
+    100% { transform: scale(1); }
+}
+
+/* Hide elements */
+.hide {
+    display: none;
+}
+@keyframes pulseGlow {
+    0% { text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); }
+    50% { text-shadow: 0 0 20px rgba(0, 255, 255, 1); }
+    100% { text-shadow: 0 0 10px rgba(0, 255, 255, 0.8); }
+}
+
+.motivation-glow {
+    animation: pulseGlow 1.5s infinite alternate ease-in-out;
+}
+#question{
+    font-size: 19px;
+}
+
+.poppins-thin {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-medium {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .poppins-extrabold {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .poppins-black {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .poppins-thin-italic {
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .poppins-extralight-italic {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .poppins-light-italic {
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .poppins-regular-italic {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .poppins-medium-italic {
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .poppins-semibold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .poppins-bold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .poppins-extrabold-italic {
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .poppins-black-italic {
+    font-family: "Poppins", serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
+  
+  .floating-info {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.info-content {
+    display: none;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+/* Mobile-friendly */
+@media (max-width: 600px) {
+    .floating-info {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+}
